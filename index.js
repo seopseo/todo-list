@@ -6,7 +6,7 @@ var mongoose = require('mongoose')
 var routes = require('./src/routes')
 
 var corsOptions = { // CORS 옵션 
-    origin: '*',
+    origin: '*', 
     credentials: true 
 }
 

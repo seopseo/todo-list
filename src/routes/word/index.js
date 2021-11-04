@@ -110,4 +110,4 @@ WordRouter.route('/(:word)?').get( async (req, res) => {
         res.json({status: 200, words})
     })
             
-    module.exports = WordRouter
+    module.exports = WordRouter 

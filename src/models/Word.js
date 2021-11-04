@@ -10,4 +10,4 @@ const wordSchema = mongoose.Schema({
 })
 
 const Word = mongoose.model('Word', wordSchema, 'kor_dic_coll')
-module.exports = Word;
+module.exports = Word; 

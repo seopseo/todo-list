@@ -7,4 +7,4 @@ const todoSchema = mongoose.Schema({ // 스키마 정의
 })
 
 const Todo = mongoose.model('Todo', todoSchema) // 스키마로부터 생성된 모델 객체
-module.exports = Todo;
+module.exports = Todo; 

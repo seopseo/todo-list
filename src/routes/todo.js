@@ -11,7 +11,7 @@ TodoRouter.get('/', async(req, res) => {
     // res.send('all todo list')
     const todos = await Todo.find()
     console.log(todos)
-    res.json({status: 200, todos})
+    res.json({status: 200, todos}) 
 
 })
 TodoRouter.get('/:id', (req, res) => {

@@ -10,3 +10,4 @@ router.use('/words', word) // /api/word
 
 
 module.exports = router
+ 
