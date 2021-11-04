@@ -11,11 +11,11 @@ var corsOptions = { // CORS 옵션
 }
 
 const CONNECT_URL = 'mongodb+srv://KimMinSeop:1234@dic-dic-dic.ltmmv.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
- mongoose.connect(CONNECT_URL, { // Mongo DB 서버 연결 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
-}).then(() => console.log("mongodb connected ...")) 
-  .catch(e => console.log(`failed to connect mongodb: ${e}`))
+//  mongoose.connect(CONNECT_URL, { // Mongo DB 서버 연결 
+//     useNewUrlParser: true, 
+//     useUnifiedTopology: true 
+// }).then(() => console.log("mongodb connected ...")) 
+//   .catch(e => console.log(`failed to connect mongodb: ${e}`))
 
 app.use(cors(corsOptions)) // CORS 설정 
 app.use(express.json()) // request body 파싱
@@ -25,7 +25,6 @@ app.use("/api", routes) // api 라우팅
 app.get('/hello', (req, res) => { // URL 응답 테스트 
     res.send('hello world !') 
 })
-
 // app.get('/hello', (req, res) => { // URL 응답 테스트 
 //     res.send(req.body) })
 
